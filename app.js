@@ -20,7 +20,7 @@ app.use(function(req, res, next) {
 });
 
 
-app.use(express.static('../frontEnd/dist/frontEnd'));
+app.use(express.static('./dist/angular'));
 app.get('*', (req, res)=> {
   const index = path.join(__dirname, '/', './dist/angular', 'index.html' );
   res.sendFile(index);
