@@ -1,0 +1,18 @@
+<div>
+  <form>
+    <label for="fname">Nom </label>
+    <input [(ngModel)]="nom" type="text" id="fname" name="firstname" placeholder="Nom de la vm" />
+
+    <label for="lname">Addresse ip </label>
+    <input [(ngModel)]="ip" type="text" id="lname" name="lastname" placeholder="IP" />
+
+    <label for="country">Systeme d'exploitation</label>
+    <select [(ngModel)]="os" id="country" name="country">
+      <option value="windows">windows</option>
+      <option value="Linux">Linux</option>
+      <option value="macOs">macOs</option>
+    </select>
+
+    <input (click)="valider()" type="submit" value="Submit" />
+  </form>
+</div>

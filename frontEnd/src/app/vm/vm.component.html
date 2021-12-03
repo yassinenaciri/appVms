@@ -1,0 +1,7 @@
+<ol>
+  <li>Machine : {{ vm.nom }}</li>
+  <li>adress IP : {{ vm.ip }}</li>
+  <li>Etat : {{ vm.etat ? 'démarréé' : 'arrétée' }}</li>
+  <li>Systeme d'exploitation : {{ vm.os }}</li>
+  <button (click)="switchState()" [style.background-color]="!vm.etat ? 'green' : 'red'">{{ !vm.etat ? 'demarrer' : 'arreter' }}</button>
+</ol>
