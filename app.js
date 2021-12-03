@@ -22,7 +22,7 @@ app.use(function(req, res, next) {
 
 app.use(express.static('./dist/angular'));
 app.get('*', (req, res)=> {
-  const index = path.join(__dirname, '/', './dist/angular', 'index.html' );
+  const index = path.join(__dirname,'dist/angular', 'index.html' );
   res.sendFile(index);
 });
 
